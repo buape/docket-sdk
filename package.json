@@ -1,0 +1,47 @@
+{
+	"name": "@buape/docket",
+	"version": "1.4.1",
+	"description": "TypeScript types for the Buape Docket public API, generated from its OpenAPI spec.",
+	"keywords": [
+		"api",
+		"buape",
+		"docket",
+		"openapi",
+		"types"
+	],
+	"homepage": "https://docket.buape.com/api/docs",
+	"bugs": "https://github.com/buape/docket-sdk/issues",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "git+https://github.com/buape/docket-sdk.git"
+	},
+	"files": [
+		"index.d.ts",
+		"client.js",
+		"client.d.ts",
+		"LICENSE"
+	],
+	"type": "module",
+	"types": "index.d.ts",
+	"exports": {
+		".": {
+			"types": "./index.d.ts"
+		},
+		"./client": {
+			"types": "./client.d.ts",
+			"default": "./client.js"
+		}
+	},
+	"publishConfig": {
+		"access": "public"
+	},
+	"scripts": {
+		"typecheck": "tsc -p tsconfig.json",
+		"prepack": "bun run typecheck"
+	},
+	"devDependencies": {
+		"typescript": "5"
+	},
+	"packageManager": "bun@1.4.1"
+}
