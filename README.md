@@ -56,6 +56,6 @@ This public repository mirrors the SDK package from Docket's private source repo
 - `main` publishes stable versions to npm's `latest` tag after Changesets version PRs are merged.
 - `beta` publishes snapshots as `0.0.0-beta-YYYYMMDDHHMMSS` to the `beta` tag.
 - GitHub Actions publishes through npm OIDC with provenance from `buape/docket-sdk`.
-- SDK versions use Changesets semver; the API specification has its own `info.version`.
+- The initial stable release is `0.1.0`, matching Docket and its API specification.
 
 Use `bun add @buape/docket@beta` to opt into snapshots. Local package verification: `bun install && bun run typecheck`.
