@@ -1,6 +1,6 @@
 {
 	"name": "@buape/docket",
-	"version": "0.1.0",
+	"version": "0.0.0-beta-20261104221240",
 	"description": "TypeScript types for the Buape Docket public API, generated from its OpenAPI spec.",
 	"keywords": [
 		"api",
